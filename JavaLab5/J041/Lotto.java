@@ -36,6 +36,7 @@ public class Lotto {
     private void generateUniqueNumbers() {
         boolean[] used = new boolean[46]; // 1~45
         int count = 0;
+        numbers = new int[6];
 
         while (count < 6) {
             int num = rand.nextInt(45) + 1; // 1~45
